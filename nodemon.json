@@ -1,6 +1,10 @@
 {
     "env": {
         "MONGO_ATLAS_PW": "asdf1234",
-        "JWT_KEY": "p@$$w07!)"
+        "JWT_KEY": "p@$$w07!)",
+        "DB_HOST":  "localhost",
+        "DB_USER":  "chiemeke",
+        "DB_NAME": "node_shop",
+        "DB_PASSWORD": "Password123."
     }
 }

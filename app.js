@@ -7,12 +7,10 @@ const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
 const userRoutes = require('./api/routes/users');
 const mongoose = require('mongoose');
+const mysql = require('mysql');
+const product = require('./api/models/products2');
 
-// Connect to MongodB 
-const dbURI = 'mongodb+srv://chiemeke:'+ process.env.MONGO_ATLAS_PW +'@dnuel.bsd9s.mongodb.net/my-webStore?retryWrites=true&w=majority';
-mongoose.connect(dbURI, {useNewUrlParser:true, useUnifiedTopology:true})
-.then((result)=>{console.log('connected to the db')})
-.catch((err)=>console.log(err));
+ 
 
 app.use(morgan('dev'));
 
